@@ -16,7 +16,7 @@ const User = sequelize.define('users', {
 })
 
 User.sync().then(() => {
-    console.log('users表已经同步.');
+    console.log('The users table has been synchronized.');
 })
 
 module.exports = User

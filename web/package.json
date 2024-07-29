@@ -5,14 +5,36 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@midwayjs/*": [
+        "node_modules/@midwayjs/*"
+      ]
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "@midwayjs/core": "^3.16.2",
+    "@midwayjs/decorator": "^3.16.2",
+    "@midwayjs/koa": "^3.16.6",
+    "@midwayjs/orm": "^3.4.3",
+    "axios": "^1.7.2",
     "bcryptjs": "^2.4.3",
     "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "koa": "^2.15.3",
     "mysql2": "^3.11.0",
-    "sequelize": "^6.37.3"
+    "reflect-metadata": "^0.2.2",
+    "sequelize": "^6.37.3",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/koa__cors": "^5.0.0",
+    "typescript": "^5.5.4"
   }
 }
