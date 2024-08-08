@@ -11,7 +11,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -21,6 +20,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Switch to web directory
+      run: cd web
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
