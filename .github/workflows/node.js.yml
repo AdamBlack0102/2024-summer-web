@@ -21,6 +21,8 @@ jobs:
     steps:
     - name: Switch to last directory
       run: cd ..
+    - name: Switch to last directory
+      run: cd ..
     - name: Switch to web directory
       run: cd web
     - uses: actions/checkout@v4
