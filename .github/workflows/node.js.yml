@@ -19,12 +19,8 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - name: Switch to last directory
-      run: cd ..
-    - name: Switch to last directory
-      run: cd ..
     - name: Switch to web directory
-      run: cd web
+      run: cd 2024-summer-web/web
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
