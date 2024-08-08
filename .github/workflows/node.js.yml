@@ -23,7 +23,7 @@ jobs:
       run: echo $PWD
       
     - name: Switch to web directory
-      run: cd ../2024-summer-web/web
+      run: cd ../web
       
     - uses: actions/checkout@v4
     
