@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../components/style_home.css">
+    <link rel="stylesheet" href="../components/style.css">
+</head>
+<body>
+
+
+
+<div id="userActivity" class="activity">
+    <h2>User Activity</h2>
+    <p id="activityCount" class="activity_number">0</p>
+</div>
+
+    <div class="rectangle"></div>
+    <div id="interestTags" class="tag">
+        <h2>Interest Tags</h2>
+        <ul id="tagList"></ul>
+        <form id="tagForm">
+            <label for="tagInput"></label><input type="text" id="tagInput" placeholder="Enter a tag">
+            <button type="submit" class="create-tag-btn">Create Tag</button>
+        </form>
+    </div>
+
+<div id="posts">
+    <h2>Posts</h2>
+    <form id="postForm">
+        <label for="postInput"></label><input type="text" id="postInput" placeholder="Enter a title">
+        <label for="imageInput" class="custom-file-input">Choose File<input type="file" id="imageInput" accept="image/*"></label>
+        <label for="tagSelect"></label>
+        <select id="tagSelect">
+            <option value="">Select a tag</option>
+        </select>
+        <button type="submit" class="create-post-btn">Create Post</button>
+    </form>
+    <ul id="postList"></ul>
+</div>
+
+    <header>
+        <h2 class="logo">OurCircle</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">User</a>
+        </nav>
+    </header>
+
+<script src="../js/script_home.js"></script>
+
+</body>
+</html>

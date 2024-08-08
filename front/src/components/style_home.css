@@ -1,0 +1,179 @@
+.rectangle {
+    position: fixed;
+    left: 0;
+    width: 230px;
+    height: 900px;
+    background-color: #1f5267;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.activity {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    color: #e2d0cc;
+    font-size: 10px;
+}
+.activity_number {
+    position: fixed;
+    bottom: 10px;
+    right: 57px;
+    color: #e2d0cc;
+    font-size: 10px;
+}
+.tag {
+    position: fixed;
+    top: 90px;
+    left: 20px;
+    color: #e2d0cc;
+}
+
+#tagForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tagInput {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.create-tag-btn {
+    position: relative;
+    transform: translateX(-40%);
+    padding: 6px 16px;
+    background-color: #0f3746;
+    color: #e2d0cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-tag-btn:hover {
+    background-color: #0f3746;
+}
+
+#tagList li {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#tagList {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+    max-height: 600px;
+    overflow: auto;
+}
+
+#posts {
+    position: fixed;
+    top: 90px;
+    left: 250px;
+    color: #0f3746;
+}
+
+#postForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#postInput {
+    position: absolute;
+    padding: 8px;
+    top: -2px;
+    left: 85px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#postList {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 600px;
+    overflow: auto;
+}
+
+#postList li {
+    flex: 0 0 200px;
+    margin: 5px;
+}
+
+.custom-file-input {
+    position: absolute;
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #0f3746;
+    color: #e2d0cc;
+    border: none;
+    top: 0;
+    left: 280px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.custom-file-input input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#tagSelect {
+    position: absolute;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    top: -18px;
+    left: 395px;
+    font-size: 13px;
+    color: #333;
+    width: 150px;
+    margin-top: 15px;
+}
+
+#tagSelect option {
+    background-color: #fff;
+    color: #333;
+}
+
+.create-post-btn {
+    position: absolute;
+    left: 560px;
+    top: 0;
+    padding: 6px 16px;
+    background-color: #0f3746;
+    color: #e2d0cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-post-btn:hover {
+    background-color: #0f3746;
+}
+
+.commentInput {
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.addComment {
+    padding: 2px 16px;
+    background-color: #0f3746;
+    color: #e2d0cc;
+    border: 0.5px solid #e2d0cc;
+    border-radius: 5px;
+    cursor: pointer;
+}

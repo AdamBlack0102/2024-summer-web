@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     background: url('../pics/background.png') no-repeat center center fixed;
     background-size: cover;
-
+    z-index: -100;
 }
 
 header {
@@ -25,7 +25,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
+    z-index: 1001;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .logo{
@@ -221,4 +222,12 @@ header {
 
 .login-register p a:hover {
     text-decoration: underline;
+}
+
+.welcome {
+    font-size: 6em;
+    background: linear-gradient(to right, #1f5267, #3a6e83,#386b80,  #e2d0cc,#d9ded9,#0f3746);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateX(20%);
 }
