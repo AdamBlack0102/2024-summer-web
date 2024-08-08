@@ -22,8 +22,11 @@ jobs:
     - name: Print current directory contents
       run: echo $PWD
       
+    - name: Switch to last directory
+      run: cd ..
+
     - name: Switch to web directory
-      run: cd ../web
+      run: cd web
       
     - uses: actions/checkout@v4
     
