@@ -24,6 +24,7 @@ jobs:
      
     - name: Set up the working directory
       working-directory: ./web
+      run: npm install
     
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
