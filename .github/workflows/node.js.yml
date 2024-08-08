@@ -25,7 +25,7 @@ jobs:
     - name: Set up the working directory
       run: |
         mkdir web
-      working-directory: ./web    
+      working-directory: /home/runner/work/2024-summer-web/web
     
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
