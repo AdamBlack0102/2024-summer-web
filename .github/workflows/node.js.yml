@@ -19,9 +19,14 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
+    - name: Print current directory contents
+      run: ls
+      
     - name: Switch to web directory
       run: cd 2024-summer-web/web
+      
     - uses: actions/checkout@v4
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
