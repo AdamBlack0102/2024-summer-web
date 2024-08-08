@@ -19,13 +19,11 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - name: Checkout
+    - name: Checkout code
       uses: actions/checkout@v4
      
     - name: Set up the working directory
-      run: |
-        mkdir web
-      working-directory: /home/runner/work/2024-summer-web/web
+      working-directory: ./web
     
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
